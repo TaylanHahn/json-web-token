@@ -17,7 +17,7 @@ O **JWT** (RFC 7519) é um padrão aberto para transmitir informações de forma
 
 Um JWT é composto por três partes separadas por pontos (`.`), formando a estrutura: `aaaaa.bbbbb.ccccc`
 
-### 1. Header (Cabeçalho)
+### 1. Header 
 Define o tipo do token e o algoritmo de assinatura (ex: HMAC SHA256 ou RSA).
 
 ```json
@@ -27,7 +27,7 @@ Define o tipo do token e o algoritmo de assinatura (ex: HMAC SHA256 ou RSA).
 }
 ````
 
-### 📦 2. Payload (Carga Útil)
+### 📦 2. Payload
 
 Contém as Claims (afirmações) sobre a entidade (usuário) e metadados.
 
@@ -46,7 +46,7 @@ Contém as Claims (afirmações) sobre a entidade (usuário) e metadados.
 }
 ````
 
-### ✍️ 3. Signature (Assinatura)
+### ✍️ 3. Signature
 
 Garante que o token não foi alterado. É criada combinando o Header codificado + Payload codificado + uma Chave Secreta (que só o servidor conhece).
 
