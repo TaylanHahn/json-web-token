@@ -4,7 +4,7 @@
 
 Este repositório atua como uma **bússola técnica** para a implementação de segurança com tokens. Ele centraliza, de forma prática e organizada, desde a anatomia do token até as melhores práticas de segurança e integração com Spring Security. Um material projetado para desmistificar o fluxo de autenticação *stateless*.
 
-### 🧠 Conceito
+## 🧠 Conceito
 
 O **JWT** (RFC 7519) é um padrão aberto para transmitir informações de forma segura entre partes como um objeto JSON. Diferente da autenticação baseada em sessão (onde o servidor guarda o estado), o JWT é **stateless**: o próprio token contém todas as informações necessárias para identificar o usuário.
 
