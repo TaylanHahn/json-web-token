@@ -1,4 +1,4 @@
-> Guia de Referência 📚 
+> Guia de Referência 📚
 ## <img src="https://jwt.io/img/pic_logo.svg" width="25"> JWT (JSON Web Token)
 ### Autenticação Stateless & Segurança Moderna
 
@@ -75,6 +75,53 @@ HMACSHA256(
 
 - ✅ **5. Validação:** O servidor verifica a assinatura do token. Se válida, libera o acesso sem consultar o banco.
 
+---
+
+## 🧩 Dependências MAVEN — `pom.xml`
+### Auth0 java-jwt (recomendado)
+
+- 📦 **Biblioteca:** Auth0 java-jwt
+- ✅ API simples e direta para criar e validar tokens JWT
+- 🚀 Integra fácil com aplicações Java e Spring Boot
+
+```xml
+	<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.1</version>
+		</dependency>
+````
+
+### JJWT (io.jsonwebtoken)
+
+- 📚 **Biblioteca:** JJWT
+- 🕰️ Muito usada em tutoriais antigos (e ainda válida hoje)
+- ⚠️ Nas versões novas foi dividida em múltiplos módulos
+- 🔧 API poderosa, porém um pouco mais verbosa que a Auth0 java-jwt
+
+```xml
+<dependency>
+    <groupId>io.jsonwebtoken</groupId>
+    <artifactId>jjwt-api</artifactId>
+    <version>0.12.5</version>
+</dependency>
+
+<dependency>
+    <groupId>io.jsonwebtoken</groupId>
+    <artifactId>jjwt-impl</artifactId>
+    <version>0.12.5</version>
+    <scope>runtime</scope>
+</dependency>
+
+<dependency>
+    <groupId>io.jsonwebtoken</groupId>
+    <artifactId>jjwt-jackson</artifactId>
+    <version>0.12.5</version>
+    <scope>runtime</scope>
+</dependency>
+````
+
+---
 
 ### 🛠️ Implementação (Java & Spring Boot)
 
